@@ -1,0 +1,177 @@
+/* Stiluri generale */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #dff9fb, #d9ffe4);
+    color: #333;
+    overflow-x: hidden;
+  }
+  
+  header {
+    background: #02701c;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  /* Meniu Dropdown */
+  .menu {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  
+  .menu-btn {
+    background: #7fb489;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .menu-btn:hover {
+    background: #41d755;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  .dropdown-menu a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.3s ease;
+  }
+  
+  .dropdown-menu a:hover {
+    background: #18ab36;
+    color: white;
+  }
+  
+  .menu:hover .dropdown-menu {
+    display: block;
+  }
+  
+  /* Galerie */
+  .image-gallery {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .image-gallery h2 {
+    margin-bottom: 20px;
+  }
+  
+  .image-box {
+    display: inline-block;
+    width: 250px;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .image-box img {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .image-box p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .image-box:hover img {
+    transform: scale(1.1);
+  }
+  
+  /* Sprite-uri sociale */
+  footer {
+    background: #02701c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Folosește sprite-ul pentru icoanele sociale */
+
+.social-media a {
+    display: inline-block;
+    width: 94px;   /* Lățimea fiecărei iconițe */
+    height: 94px;  /* Înălțimea fiecărei iconițe */
+    background-image: url('social_sprites.png');  /* Imaginea sprite */
+    background-repeat: no-repeat;
+    transition: opacity 0.3s ease;
+  }
+  .social-media a:hover {
+    opacity: 0.7;  /* Schimbă opacitatea la 0.7 pentru a da un efect de transparență */
+  }
+  /* Facebook */
+  .social-media .facebook {
+    background-position: -10px -10px;  /* Poziția iconiței Facebook în sprite */
+  }
+  
+  /* Twitter */
+  .social-media .twitter {
+    background-position: -10px -124px;  /* Poziția iconiței Twitter în sprite */
+  }
+  
+  /* Instagram */
+  .social-media .instagram {
+    background-position: -124px -10px;  /* Poziția iconiței Instagram în sprite */
+  }
+  /* Adaptabilitate */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1.8rem;
+    }
+  
+    .menu-btn {
+      font-size: 14px;
+      padding: 8px 15px;
+    }
+  
+    .image-box {
+      width: 200px;
+    }
+  
+    .social-media {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .menu-btn {
+      font-size: 12px;
+    }
+  
+    .image-box {
+      width: 150px;
+    }
+  
+    .social-media {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  

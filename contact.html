@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pagina web despre locuri turistice in Republica Moldova" />
+  <meta name="keywords" content="HTML, pagină web, laborator, Moldova, calatorie, aventura, agentie" />
+  <meta name="author" content="Cebanu Olivia" />
+  <link rel="shortcut icon" href="Imagini/ico.png" />
+  <title>Contacte-Excursii Moldova</title>
+  <style>
+ /* Stiluri generale */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  background-color: #039c27;
+  color: white;
+  padding: 20px 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background: #89c28b;
+  padding: 10px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  transition: background 0.3s ease;
+}
+
+.nav-links li a.active {
+  background: #0a6719;
+}
+
+.nav-links li a:hover {
+  background: #0ca525;
+}
+
+h1 {
+  margin: 20px 0;
+}
+
+/* Form */
+.contact-form {
+  background-color: white;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+  text-align: center;
+  color: #05730e;
+}
+
+.contact-form p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea, .form-group select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  height: 150px;
+}
+
+.form-group button {
+  background-color: #0e9f06;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  width: 100%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form-group button:hover {
+  background-color: #055709;
+}
+
+/* Contact info section */
+.contact-info {
+  background-color: white;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+  text-align: center;
+  color: #dac403;
+}
+
+.contact-info p {
+  font-size: 1.1em;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-form, .contact-info {
+    width: 95%;
+  }
+}
+
+
+  </style>
+</head>
+<body>
+    <header>
+      <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="index.html">Acasă</a></li>
+          <li><a href="servicii.html">Servicii</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="contact.html" class="active">Contacte</a></li>
+        </ul>
+      </nav>
+      <h1>Contactează-ne pentru excursii de neuitat în Moldova</h1>
+    </header>
+  
+    <main>
+      <section class="contact-form">
+        <h2>Formular de Contact</h2>
+        <p>Completează formularul de mai jos pentru a rezerva excursia ta în Republica Moldova sau pentru orice întrebare.</p>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="name">Nume complet:</label>
+            <input type="text" id="name" name="name" placeholder="Introduceti numele complet" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Introduceti emailul" required>
+          </div>
+  
+          <div class="form-group">
+            <label for="country">Țara de proveniență:</label>
+            <select id="country" name="country" required>
+              <option value="cultural">Republica Moldova</option>
+              <option value="relaxare">România</option>
+              <option value="relaxare">Ucraina</option>
+              <option value="aventura">Franța</option>
+              <option value="relaxare">Germania</option>
+              <option value="relaxare">Bulgaria</option>
+              <option value="relaxare">Ungaria</option>
+              <option value="relaxare">Turcia</option>
+              <option value="relaxare">Grecia</option>
+              <option value="relaxare">Belarus</option>
+              <option value="relaxare">Rusia</option>
+              <option value="relaxare">Ucraina</option>
+              <option value="relaxare">Austria</option>
+              <option value="relaxare">Republica Cehă</option>
+              <option value="relaxare">Muntenegru</option>
+              <option value="relaxare">Finlanda</option>
+              <option value="relaxare">Marea Britanie</option>
+              <option value="relaxare">Statele Unite ale Americii</option>
+              <option value="relaxare">Brasilia</option>
+              <option value="relaxare">Spania</option>
+              <option value="relaxare">Altă țară</option>
+            </select>
+          </div>
+  
+          <div class="form-group">
+            <label for="message">Mesaj:</label>
+            <textarea id="message" name="message" placeholder="Scrie mesajul tău..." required></textarea>
+          </div>
+  
+          <div class="form-group">
+            <label for="tour-type">Tipul excursiei dorite:</label>
+            <select id="tour-type" name="tour-type" required>
+              <option value="cultural">Excursie culturală</option>
+              <option value="aventura">Excursie de aventură</option>
+              <option value="relaxare">Excursie de relaxare</option>
+              <option value="relaxare">Excursie în grup</option>
+              <option value="relaxare">Excursie de cuplu</option>
+            </select>
+          </div>
+  
+          <div class="form-group">
+            <label for="dates">Datele excursiei:</label>
+            <input type="date" id="dates" name="dates" required>
+          </div>
+  
+          <div class="form-group">
+            <button type="submit">Trimite mesajul</button>
+          </div>
+        </form>
+      </section>
+  
+      <section class="contact-info">
+        <h2>Informații de contact</h2>
+        <p>Adresa: Strada M. Eminescu 12, Chișinău, Republica Moldova</p>
+        <p>Telefon: +373 123 456 789</p>
+        <p>Email: Moldova@excursii.md</p>
+        <p>Program de lucru: Luni - Vineri: 9:00 - 18:00</p>
+      </section>
+    </main>
+  
+    <footer>
+      <p>&copy; 2024 Excursii Moldova | Toate drepturile rezervate</p>
+    </footer>
+  </body>
+</html>
